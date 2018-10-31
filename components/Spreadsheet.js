@@ -11,7 +11,7 @@ export default class Spreadsheet extends React.Component {
       table: [['']],
       focused: null,
     };
-    
+
     this.handleAddColumn = actions.addColumn.bind(this);
     this.handleAddRow = actions.addRow.bind(this);
     this.handleRemoveColumn = actions.removeColumn.bind(this);
@@ -37,10 +37,10 @@ export default class Spreadsheet extends React.Component {
           <button onClick={this.handleRemoveRow}>Remove Row</button>
         </div>
 
-        <Table 
-          table={this.state.table} 
-          onChange={this.handleChange} 
-          onFocus={this.handleFocus} 
+        <Table
+          table={this.state.table}
+          onChange={this.handleChange}
+          onFocus={this.handleFocus}
           onBlur={this.handleBlur}
         />
 
